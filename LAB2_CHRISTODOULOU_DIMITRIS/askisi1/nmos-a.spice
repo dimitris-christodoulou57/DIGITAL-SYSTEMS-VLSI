@@ -1,0 +1,18 @@
+* Exercise 1 nmos part A
+
+.include 0.25-models
+
+M1001 d g 0 0 CMOSN w=3u l=2u
+
+vgs g 0 0v DC
+vds d 0 2.5v DC
+
+.dc vgs 0 2.5v 0.25v vds 0 2.5v 0.25v
+
+.control
+	run
+	plot -i(vds)
+	plot deriv(-i(vds))
+.endc
+
+.end

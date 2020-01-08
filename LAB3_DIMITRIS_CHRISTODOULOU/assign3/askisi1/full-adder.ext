@@ -1,0 +1,138 @@
+timestamp 1544468751
+version 8.1
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "Cout" 144 2256 73 -58 ndiff 19 18 19 18 0 0 0 0 0 0 0 0 86 62 0 0 0 0
+node "a_121_n13#" 53 0 121 -13 ndiff 18 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_113_n13#" 53 0 113 -13 ndiff 18 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_81_n13#" 186 752 81 -13 ndiff 44 40 0 0 0 0 0 0 0 0 0 0 110 78 0 0 0 0
+node "a_12_n13#" 178 0 12 -13 ndiff 41 38 0 0 0 0 0 0 0 0 0 0 110 78 0 0 0 0
+node "a_n4_n13#" 53 0 -4 -13 ndiff 18 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Sout" 144 2397 161 -8 ndiff 19 18 19 18 0 0 0 0 0 0 0 0 89 64 0 0 0 0
+node "Cin" 513 2618 127 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 513 2618 119 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "Sout'" 763 14589 105 -13 ndiff 22 20 41 38 68 64 0 0 0 0 0 0 394 266 0 0 0 0
+node "A" 513 2618 111 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_89_11#" 119 0 89 11 pdiff 0 0 18 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_81_11#" 119 0 81 11 pdiff 0 0 18 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Cin" 513 2618 95 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 513 2618 87 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 513 2618 79 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_74_11#" 672 1316 74 11 pdc 0 0 63 58 0 0 0 0 0 0 0 0 252 172 0 0 0 0
+node "a_20_11#" 119 0 20 11 pdiff 0 0 18 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Cin" 513 2778 26 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 513 2778 18 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 513 2778 10 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 513 2778 2 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "Cout'" 1148 33094 -4 11 pdiff 22 20 22 20 182 176 0 0 0 0 0 0 646 434 0 0 0 0
+node "Cin" 513 2778 -6 -22 p 0 0 0 0 86 90 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n11_11#" 655 2068 -11 11 pdc 0 0 60 56 0 0 0 0 0 0 0 0 225 154 0 0 0 0
+node "GND" 104 0 66 -67 pw 19 18 16 16 0 0 0 0 0 0 0 0 68 50 0 0 0 0
+node "VDD" 2825 0 65 -46 nw 16 16 19 18 0 0 0 0 0 0 0 0 68 50 0 0 182 54
+node "GND" 104 0 154 -17 pw 19 18 16 16 0 0 0 0 0 0 0 0 68 50 0 0 0 0
+node "GND" 884 0 71 -23 pw 60 56 48 48 0 0 0 0 0 0 0 0 288 194 0 0 0 0
+node "GND" 526 0 -14 -22 pw 41 38 32 32 0 0 0 0 0 0 0 0 208 142 0 0 0 0
+node "VDD" 2825 0 153 4 nw 16 16 19 18 0 0 0 0 0 0 0 0 68 50 0 0 182 54
+node "VDD" 7787 0 72 6 nw 16 16 22 20 0 0 0 0 0 0 0 0 236 162 0 0 1344 170
+node "VDD" 5878 0 -13 7 nw 16 16 22 20 0 0 0 0 0 0 0 0 191 132 0 0 1008 138
+cap "Cin" "a_81_n13#" 180
+cap "Sout'" "Cin" 180
+cap "Sout'" "VDD" 1410
+cap "Cout'" "VDD" 1194
+cap "a_74_11#" "A" 180
+cap "a_74_11#" "Cout'" 180
+cap "Cout'" "VDD" 564
+cap "A" "GND" 4070
+cap "B" "VDD" 3336
+cap "Cin" "VDD" 3098
+cap "Cin" "VDD" 3098
+cap "Sout'" "GND" 2802
+cap "A" "GND" 3992
+cap "Cout'" "GND" 4070
+cap "B" "GND" 4070
+cap "A" "Sout'" 180
+cap "a_74_11#" "B" 180
+cap "Cin" "VDD" 3336
+cap "a_n11_11#" "VDD" 4841
+cap "B" "Cout'" 180
+cap "Sout'" "GND" 705
+cap "Cin" "a_12_n13#" 180
+cap "Cout'" "GND" 846
+cap "B" "Sout'" 180
+cap "a_74_11#" "VDD" 6580
+cap "B" "GND" 3992
+cap "Cin" "Sout'" 180
+cap "Cin" "GND" 4070
+cap "Cin" "GND" 4070
+cap "A" "Cout'" 180
+cap "B" "a_n11_11#" 180
+cap "A" "VDD" 3336
+cap "Sout" "GND" 141
+cap "Sout'" "VDD" 1194
+cap "Cin" "GND" 3992
+cap "B" "Cout'" 180
+cap "a_74_11#" "A" 180
+cap "B" "VDD" 3336
+cap "A" "a_n11_11#" 180
+cap "Cin" "VDD" 3336
+cap "a_74_11#" "B" 180
+cap "B" "VDD" 3098
+cap "A" "Sout'" 180
+cap "Sout'" "Cout'" 180
+cap "A" "GND" 3992
+cap "Cout'" "Cin" 180
+cap "B" "a_n11_11#" 180
+cap "a_74_11#" "Cin" 180
+cap "Cin" "Cout'" 180
+cap "Cout" "GND" 141
+cap "Sout" "VDD" 141
+cap "a_12_n13#" "B" 180
+cap "B" "GND" 3992
+cap "A" "VDD" 3098
+cap "Cout" "VDD" 141
+cap "a_81_n13#" "GND" 2350
+cap "a_12_n13#" "GND" 3102
+cap "B" "a_81_n13#" 180
+cap "Sout'" "B" 180
+cap "Cin" "GND" 3992
+cap "Cin" "a_n11_11#" 180
+cap "Cout'" "GND" 2802
+cap "B" "GND" 4070
+cap "A" "VDD" 3336
+cap "Cin" "a_n11_11#" 180
+cap "Cout'" "VDD" 3336
+cap "B" "VDD" 3098
+device mosfet nfet 71 -58 72 -57 2 3 "GND" "Cout'" 4 0 "GND" 3 0 "Cout" 3 0
+device mosfet pfet 71 -45 72 -44 2 3 "VDD" "Cout'" 4 0 "VDD" 3 0 "Cout" 3 0
+device mosfet nfet 127 -13 128 -12 2 3 "GND" "Cin" 4 0 "a_121_n13#" 3 0 "GND" 3 0
+device mosfet nfet 119 -13 120 -12 2 3 "GND" "B" 4 0 "a_113_n13#" 3 0 "a_121_n13#" 3 0
+device mosfet nfet 111 -13 112 -12 2 3 "GND" "A" 4 0 "Sout'" 3 0 "a_113_n13#" 3 0
+device mosfet nfet 103 -13 104 -12 2 3 "GND" "Cout'" 4 0 "a_81_n13#" 3 0 "Sout'" 3 0
+device mosfet nfet 95 -13 96 -12 2 3 "GND" "Cin" 4 0 "GND" 3 0 "a_81_n13#" 3 0
+device mosfet nfet 87 -13 88 -12 2 3 "GND" "B" 4 0 "a_81_n13#" 3 0 "GND" 3 0
+device mosfet nfet 79 -13 80 -12 2 3 "GND" "A" 4 0 "GND" 3 0 "a_81_n13#" 3 0
+device mosfet nfet 26 -13 27 -12 2 3 "GND" "Cin" 4 0 "GND" 3 0 "a_12_n13#" 3 0
+device mosfet nfet 18 -13 19 -12 2 3 "GND" "B" 4 0 "a_12_n13#" 3 0 "GND" 3 0
+device mosfet nfet 10 -13 11 -12 2 3 "GND" "A" 4 0 "Cout'" 3 0 "a_12_n13#" 3 0
+device mosfet nfet 2 -13 3 -12 2 3 "GND" "B" 4 0 "a_n4_n13#" 3 0 "Cout'" 3 0
+device mosfet nfet -6 -13 -5 -12 2 3 "GND" "Cin" 4 0 "GND" 3 0 "a_n4_n13#" 3 0
+device mosfet nfet 159 -8 160 -7 2 3 "GND" "Sout'" 4 0 "GND" 3 0 "Sout" 3 0
+device mosfet pfet 159 5 160 6 2 3 "VDD" "Sout'" 4 0 "VDD" 3 0 "Sout" 3 0
+device mosfet pfet 127 11 128 12 2 3 "VDD" "Cin" 4 0 "a_74_11#" 3 0 "Sout'" 3 0
+device mosfet pfet 119 11 120 12 2 3 "VDD" "B" 4 0 "Sout'" 3 0 "a_74_11#" 3 0
+device mosfet pfet 111 11 112 12 2 3 "VDD" "A" 4 0 "a_74_11#" 3 0 "Sout'" 3 0
+device mosfet pfet 103 11 104 12 2 3 "VDD" "Cout'" 4 0 "VDD" 3 0 "a_74_11#" 3 0
+device mosfet pfet 95 11 96 12 2 3 "VDD" "Cin" 4 0 "a_89_11#" 3 0 "VDD" 3 0
+device mosfet pfet 87 11 88 12 2 3 "VDD" "B" 4 0 "a_81_11#" 3 0 "a_89_11#" 3 0
+device mosfet pfet 79 11 80 12 2 3 "VDD" "A" 4 0 "a_74_11#" 3 0 "a_81_11#" 3 0
+device mosfet pfet 26 11 27 12 2 3 "VDD" "Cin" 4 0 "a_20_11#" 3 0 "a_n11_11#" 3 0
+device mosfet pfet 18 11 19 12 2 3 "VDD" "B" 4 0 "VDD" 3 0 "a_20_11#" 3 0
+device mosfet pfet 10 11 11 12 2 3 "VDD" "A" 4 0 "a_n11_11#" 3 0 "VDD" 3 0
+device mosfet pfet 2 11 3 12 2 3 "VDD" "B" 4 0 "Cout'" 3 0 "a_n11_11#" 3 0
+device mosfet pfet -6 11 -5 12 2 3 "VDD" "Cin" 4 0 "a_n11_11#" 3 0 "Cout'" 3 0
+subcap "a_81_n13#" -564
+subcap "a_74_11#" -846
+subcap "Cout'" -7065
+subcap "Sout'" -1692

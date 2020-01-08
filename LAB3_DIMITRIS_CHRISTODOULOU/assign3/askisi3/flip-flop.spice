@@ -1,0 +1,55 @@
+* SPICE3 file flip-flop.spice
+
+.include 0.25-models
+
+.subckt clk_inv_large drain gate source bulk
+	M3 drain gate source bulk CMOSP w=18u l=2u
+	M4 drain gate 0 0 CMOSN w=6u l=2u
+.ends
+
+.subckt inv drain gate source bulk
+	M1 drain gate source bulk CMOSP w=9u l=2u
+	M2 drain gate 0 0 CMOSN w=3u l=2u
+.ends
+
+Vvdd vdd 0 2.5v dc
+Vclk clk 0 pwl (0 0 10ns 0 10.2ns 2.5 20ns 2.5 20.2ns 0 30ns 0 30.2ns 2.5 40ns 2.5 40.2ns 0 50ns 0 50.2ns 2.5 60ns 2.5 60.2ns 0 70ns 0 70.2ns 2.5 80 2.5 80.2ns 0)
+VDin Din 0 pwl (0 0 20ns 0 20.4ns 2.5 40ns 2.5 40.4ns 0 70ns 0 70.4ns 2.5 100ns 2.5)
+* VDin Din 0 pwl (0 2.5 20ns 2.5 20.4ns 0 40ns 0 40.4ns 2.5 70ns 2.5 70.4ns 0 100ns 0)
+
+Xclk_1 clk_1 clk vdd vdd inv
+Xclk_2 clk_2 clk_1 vdd vdd inv
+Xclk_3 clk_3 clk_2 vdd vdd clk_inv_large
+Xclk_4 clk_4 clk_3 vdd vdd clk_inv_large
+
+Xinv1 Dout Din vdd vdd inv
+
+Xclk_3 clk_3_inv clk_3 vdd vdd inv
+Xclk_4 clk_4_inv clk_4 vdd vdd inv
+
+Xlatch_1_out QM QMin vdd vdd inv
+X2 t2 QM vdd vdd inv
+X3 t3 QM vdd vdd inv
+X4 t4 Q vdd vdd inv
+Xlatch_2_out Q Qin vdd vdd inv
+
+Mp_1 QMin clk_3_inv Dout vdd CMOSP w=27u l=3u
+Mn_1 QMin clk_4 Dout 0 CMOSN w=9u l=3u
+
+Mp_2 QMin clk_4_inv t2 vdd CMOSP w=27u l=3u
+Mn_2 QMin clk_3 t2 0 CMOSN w=9u l=3u
+
+Mp_3 Qin clk_4_inv t3 vdd CMOSP w=27u l=3u
+Mn_3 Qin clk_3 t3 0 CMOSN w=9u l=3u
+
+Mp_4 Qin clk_3_inv t4 vdd CMOSP w=27u l=3u
+Mn_4 Qin clk_4 t4 0 CMOSN w=9u l=3u
+
+.tran 10ps 110ns
+
+.control
+	run
+	plot Din clk QM Q
+
+
+

@@ -1,0 +1,23 @@
+* Exercise 1 pmos part B
+
+.include 0.25-models
+
+M1000 d g vdd vdd CMOSP w=3u l=2u
++  ad=19p pd=18u as=19p ps=18u
+
+vvdd vdd 0 2.5v DC
+vgs g vdd 0v DC
+vds d vdd 0v DC
+C1 d 0 0.1p
+
+.dc vds -2.5v 0 0.25v
+
+.control
+	run
+	plot deriv(-i(vds))
+.endc
+
+.end
+
+
+

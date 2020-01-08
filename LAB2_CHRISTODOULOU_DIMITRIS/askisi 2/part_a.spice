@@ -1,0 +1,22 @@
+* SPICE3 file created from inverter.ext - technology: scmos
+
+.include 0.25-models
+
+M1000 out in vdd vdd CMOSP w=3u l=2u
++  ad=19p pd=18u as=19p ps=18u
+M1001 out in 0 0 CMOSN w=3u l=2u
++  ad=19p pd=18u as=19p ps=18u
+
+vvdd vdd 0 2.5v DC
+
+vin in 0 pwl
++0ns 0v
++1ns 2.5v
++9ns 2.5v
++10ns 0v
+
+.tran 10ps 20ns
+
+.control
+	run
+	plot v(in) v(out)

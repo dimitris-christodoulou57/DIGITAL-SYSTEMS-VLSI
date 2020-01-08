@@ -1,0 +1,26 @@
+* SPICE3 file created from magic4-4.ext - technology: scmos
+
+M1000 vdd a a_n31_8# Vdd pfet w=3u l=2u
++  ad=46p pd=36u as=90p ps=76u
+M1001 a_n31_8# c vdd Vdd pfet w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1002 vout d a_n31_8# Vdd pfet w=3u l=2u
++  ad=46p pd=36u as=0p ps=0u
+M1003 a_n31_8# b vout Vdd pfet w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1004 a_n23_n20# a vout Gnd nfet w=3u l=2u
++  ad=42p pd=34u as=44p ps=40u
+M1005 gnd c a_n23_n20# Gnd nfet w=3u l=2u
++  ad=46p pd=36u as=0p ps=0u
+M1006 a_9_n20# d gnd Gnd nfet w=3u l=2u
++  ad=42p pd=34u as=0p ps=0u
+M1007 vout b a_9_n20# Gnd nfet w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+C0 gnd Gnd 10.86fF
+C1 b Gnd 11.19fF
+C2 vout Gnd 12.55fF
+C3 d Gnd 11.19fF
+C4 c Gnd 11.19fF
+C5 vdd Gnd 10.72fF
+C6 a Gnd 11.19fF
+C7 a_n31_8# Gnd 9.73fF

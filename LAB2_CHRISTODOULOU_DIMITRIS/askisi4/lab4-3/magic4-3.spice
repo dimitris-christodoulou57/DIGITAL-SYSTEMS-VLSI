@@ -1,0 +1,32 @@
+* SPICE3 file created from magic4-3.ext - technology: scmos
+
+.include 0.25-models
+
+M1000 vdd c a_n21_3# Vdd CMOSP w=3u l=2u
++  ad=47p pd=42u as=47p ps=42u
+M1001 a_n21_3# a vdd Vdd CMOSP w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1002 vout b a_n21_3# Vdd CMOSP w=3u l=2u
++  ad=25p pd=22u as=0p ps=0u
+M1003 a_14_3# a vout Vdd CMOSP w=3u l=2u
++  ad=21p pd=20u as=0p ps=0u
+M1004 vdd c a_14_3# Vdd CMOSP w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1005 a_n13_n25# c a_n21_n26# Gnd CMOSN w=3u l=2u
++  ad=21p pd=20u as=69p ps=62u
+M1006 gnd a a_n13_n25# Gnd CMOSN w=3u l=2u
++  ad=25p pd=22u as=0p ps=0u
+M1007 a_n21_n26# b gnd Gnd CMOSN w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1008 vout a a_n21_n26# Gnd CMOSN w=3u l=2u
++  ad=25p pd=22u as=0p ps=0u
+M1009 a_n21_n26# c vout Gnd CMOSN w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+C0 gnd Gnd 9.02fF
+C1 a_n21_n26# Gnd 7.75fF
+C2 vout Gnd 9.31fF
+C3 b Gnd 9.53fF
+C4 vdd Gnd 10.15fF
+C5 a Gnd 24.45fF
+C6 a_n21_3# Gnd 3.52fF
+C7 c Gnd 30.64fF

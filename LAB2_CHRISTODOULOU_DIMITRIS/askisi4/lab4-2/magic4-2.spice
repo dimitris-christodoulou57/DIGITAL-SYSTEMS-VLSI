@@ -1,0 +1,28 @@
+* SPICE3 file created from magic4-2.ext - technology: scmos
+
+.include 0.25-models
+
+M1000 a_n14_3# a vdd Vdd CMOSP w=3u l=2u
++  ad=27p pd=24u as=44p ps=40u
+M1001 a_n3_3# c a_n14_3# Vdd CMOSP w=3u l=2u
++  ad=27p pd=24u as=0p ps=0u
+M1002 vout d a_n3_3# Vdd CMOSP w=3u l=2u
++  ad=40p pd=32u as=0p ps=0u
+M1003 vdd b vout Vdd CMOSP w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1004 a_n14_n25# a gnd Gnd CMOSN w=3u l=2u
++  ad=71p pd=58u as=50p ps=44u
+M1005 gnd c a_n14_n25# Gnd CMOSN w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1006 a_n14_n25# d gnd Gnd CMOSN w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1007 vout b a_n14_n25# Gnd CMOSN w=3u l=2u
++  ad=25p pd=22u as=0p ps=0u
+C0 a_n14_n25# Gnd 4.09fF
+C1 gnd Gnd 10.43fF
+C2 b Gnd 11.19fF
+C3 vout Gnd 9.59fF
+C4 d Gnd 11.19fF
+C5 c Gnd 11.19fF
+C6 a Gnd 11.19fF
+C7 vdd Gnd 10.43fF

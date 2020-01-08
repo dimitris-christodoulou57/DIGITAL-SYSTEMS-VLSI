@@ -1,0 +1,82 @@
+* SPICE3 file created from full-adder.ext - technology: scmos
+
+.include 0.25-models
+
+M1000 Cout' Cin a_n11_11# VDD CMOSP w=3u l=2u
++  ad=22p pd=20u as=60p ps=56u
+M1001 a_n11_11# B Cout' VDD CMOSP w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1002 VDD A a_n11_11# VDD CMOSP w=3u l=2u
++  ad=82p pd=76u as=0p ps=0u
+M1003 a_20_11# B VDD VDD CMOSP w=3u l=2u
++  ad=18p pd=18u as=0p ps=0u
+M1004 a_n11_11# Cin a_20_11# VDD CMOSP w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1005 a_81_11# A a_74_11# VDD CMOSP w=3u l=2u
++  ad=18p pd=18u as=63p ps=58u
+M1006 a_89_11# B a_81_11# VDD CMOSP w=3u l=2u
++  ad=18p pd=18u as=0p ps=0u
+M1007 VDD Cin a_89_11# VDD CMOSP w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1008 a_74_11# Cout' VDD VDD CMOSP w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1009 Sout' A a_74_11# VDD CMOSP w=3u l=2u
++  ad=41p pd=38u as=0p ps=0u
+M1010 a_74_11# B Sout' VDD CMOSP w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1011 Sout' Cin a_74_11# VDD CMOSP w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1012 Sout Sout' VDD VDD CMOSP w=3u l=2u
++  ad=19p pd=18u as=0p ps=0u
+M1013 Sout Sout' GND GND CMOSN w=3u l=2u
++  ad=19p pd=18u as=139p ps=130u
+M1014 a_n4_n13# Cin GND GND CMOSN w=3u l=2u
++  ad=18p pd=18u as=0p ps=0u
+M1015 Cout' B a_n4_n13# GND CMOSN w=3u l=2u
++  ad=22p pd=20u as=0p ps=0u
+M1016 a_12_n13# A Cout' GND CMOSN w=3u l=2u
++  ad=41p pd=38u as=0p ps=0u
+M1017 GND B a_12_n13# GND CMOSN w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1018 a_12_n13# Cin GND GND CMOSN w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1019 a_81_n13# A GND GND CMOSN w=3u l=2u
++  ad=44p pd=40u as=0p ps=0u
+M1020 GND B a_81_n13# GND CMOSN w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1021 a_81_n13# Cin GND GND CMOSN w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1022 Sout' Cout' a_81_n13# GND CMOSN w=3u l=2u
++  ad=22p pd=20u as=0p ps=0u
+M1023 a_113_n13# A Sout' GND CMOSN w=3u l=2u
++  ad=18p pd=18u as=0p ps=0u
+M1024 a_121_n13# B a_113_n13# GND CMOSN w=3u l=2u
++  ad=18p pd=18u as=0p ps=0u
+M1025 GND Cin a_121_n13# GND CMOSN w=3u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1026 Cout Cout' VDD VDD CMOSP w=3u l=2u
++  ad=19p pd=18u as=0p ps=0u
+M1027 Cout Cout' GND GND CMOSN w=3u l=2u
++  ad=19p pd=18u as=0p ps=0u
+C0 VDD a_n11_11# 4.84fF
+C1 VDD Cout' 5.09fF
+C2 GND Cout' 7.72fF
+C3 VDD a_74_11# 6.58fF
+C4 VDD Cin 12.87fF
+C5 GND Cin 16.12fF
+C6 VDD A 9.77fF
+C7 GND a_81_n13# 2.35fF
+C8 VDD Sout' 2.60fF
+C9 GND A 12.05fF
+C10 GND Sout' 3.51fF
+C11 VDD B 12.87fF
+C12 GND a_12_n13# 3.10fF
+C13 GND B 16.12fF
+C14 Sout 0 2.40fF
+C15 Sout' 0 12.90fF
+C16 a_n11_11# 0 2.07fF
+
+VVDD VDD 0 2.5v DC
+VGND GND 0 0V DC
+
+

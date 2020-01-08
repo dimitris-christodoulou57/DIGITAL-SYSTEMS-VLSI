@@ -1,0 +1,107 @@
+timestamp 1547196855
+version 8.1
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "WL7" 632 11670 -26 5 p 0 0 0 0 106 110 0 0 0 0 0 0 0 0 0 0 0 0
+node "GND" 542 0 -26 9 ndiff 207 136 0 0 0 0 0 0 0 0 0 0 64 64 0 0 0 0
+node "WL6" 632 11670 -26 15 p 0 0 0 0 106 110 0 0 0 0 0 0 0 0 0 0 0 0
+node "WL5" 632 11038 -26 25 p 0 0 0 0 106 110 0 0 0 0 0 0 0 0 0 0 0 0
+node "GND" 566 0 -26 29 ndiff 223 144 0 0 0 0 0 0 0 0 0 0 64 64 0 0 0 0
+node "WL4" 632 11038 -26 35 p 0 0 0 0 106 110 0 0 0 0 0 0 0 0 0 0 0 0
+node "WL3" 632 11670 -26 45 p 0 0 0 0 106 110 0 0 0 0 0 0 0 0 0 0 0 0
+node "GND" 524 0 -26 49 ndiff 195 130 0 0 0 0 0 0 0 0 0 0 48 48 0 0 0 0
+node "a_n26_55#" 632 12302 -26 55 p 0 0 0 0 106 110 0 0 0 0 0 0 0 0 0 0 0 0
+node "WL1" 632 11670 -26 65 p 0 0 0 0 106 110 0 0 0 0 0 0 0 0 0 0 0 0
+node "GND" 506 0 -26 69 ndiff 183 124 0 0 0 0 0 0 0 0 0 0 32 32 0 0 0 0
+node "WL0" 632 12934 -26 75 p 0 0 0 0 106 110 0 0 0 0 0 0 0 0 0 0 0 0
+node "BL3" 274 9870 15 17 ndiff 64 48 24 20 0 0 0 0 0 0 0 0 348 236 0 0 0 0
+node "BL2" 274 9870 2 17 ndiff 64 48 24 20 0 0 0 0 0 0 0 0 348 236 0 0 0 0
+node "BL1" 481 10716 -11 -1 ndc 96 80 24 20 0 0 0 0 0 0 0 0 398 268 0 0 0 0
+node "BL0" 264 9870 -24 -1 ndc 56 44 24 20 0 0 0 0 0 0 0 0 348 236 0 0 0 0
+node "GND" 679 3251 -26 99 pc 0 0 0 0 122 122 0 0 0 0 0 0 43 34 0 0 0 0
+node "VDD" 871 0 -17 101 pdiff 0 0 96 80 0 0 0 0 0 0 0 0 268 182 0 0 0 0
+node "w_n22_91#" 5429 0 -22 91 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1248 152
+cap "WL7" "BL3" 180
+cap "GND" "BL2" 423
+cap "WL6" "BL1" 180
+cap "WL5" "BL0" 180
+cap "BL0" "w_n22_91#" 282
+cap "WL7" "BL2" 180
+cap "GND" "BL1" 423
+cap "WL6" "BL0" 180
+cap "GND" "w_n22_91#" 10008
+cap "WL7" "BL1" 180
+cap "WL3" "BL3" 180
+cap "GND" "BL0" 423
+cap "a_n26_55#" "BL3" 180
+cap "VDD" "w_n22_91#" 9588
+cap "WL7" "BL0" 180
+cap "WL3" "BL2" 180
+cap "WL1" "BL3" 180
+cap "a_n26_55#" "BL2" 180
+cap "GND" "BL3" 423
+cap "WL3" "BL1" 180
+cap "WL4" "BL3" 180
+cap "GND" "BL3" 423
+cap "WL1" "BL2" 180
+cap "a_n26_55#" "BL1" 180
+cap "GND" "BL2" 423
+cap "WL3" "BL0" 180
+cap "WL4" "BL2" 180
+cap "WL0" "BL3" 180
+cap "GND" "BL2" 423
+cap "WL1" "BL1" 180
+cap "a_n26_55#" "BL0" 180
+cap "GND" "BL1" 423
+cap "GND" "BL3" 423
+cap "WL4" "BL1" 180
+cap "WL0" "BL2" 180
+cap "GND" "BL1" 423
+cap "WL1" "BL0" 180
+cap "GND" "BL0" 423
+cap "WL5" "BL3" 180
+cap "GND" "BL2" 423
+cap "WL4" "BL0" 180
+cap "WL0" "BL1" 180
+cap "GND" "BL0" 423
+cap "BL3" "w_n22_91#" 282
+cap "WL6" "BL3" 180
+cap "WL5" "BL2" 180
+cap "GND" "BL1" 423
+cap "WL0" "BL0" 180
+cap "BL2" "w_n22_91#" 282
+cap "GND" "BL3" 423
+cap "WL6" "BL2" 180
+cap "WL5" "BL1" 180
+cap "GND" "BL0" 423
+cap "BL1" "w_n22_91#" 282
+device mosfet nfet -11 5 -10 6 2 4 "Gnd!" "WL7" 4 0 "BL1" 4 0 "GND" 4 0
+device mosfet nfet -24 5 -23 6 2 4 "Gnd!" "WL7" 4 0 "BL0" 4 0 "GND" 4 0
+device mosfet nfet 15 15 16 16 2 4 "Gnd!" "WL6" 4 0 "GND" 4 0 "BL3" 4 0
+device mosfet nfet 2 15 3 16 2 4 "Gnd!" "WL6" 4 0 "GND" 4 0 "BL2" 4 0
+device mosfet nfet 15 25 16 26 2 4 "Gnd!" "WL5" 4 0 "BL3" 4 0 "GND" 4 0
+device mosfet nfet 2 25 3 26 2 4 "Gnd!" "WL5" 4 0 "BL2" 4 0 "GND" 4 0
+device mosfet nfet -11 25 -10 26 2 4 "Gnd!" "WL5" 4 0 "BL1" 4 0 "GND" 4 0
+device mosfet nfet 2 35 3 36 2 4 "Gnd!" "WL4" 4 0 "GND" 4 0 "BL2" 4 0
+device mosfet nfet -11 35 -10 36 2 4 "Gnd!" "WL4" 4 0 "GND" 4 0 "BL1" 4 0
+device mosfet nfet -24 35 -23 36 2 4 "Gnd!" "WL4" 4 0 "GND" 4 0 "BL0" 4 0
+device mosfet nfet 2 45 3 46 2 4 "Gnd!" "WL3" 4 0 "BL2" 4 0 "GND" 4 0
+device mosfet nfet -24 45 -23 46 2 4 "Gnd!" "WL3" 4 0 "BL0" 4 0 "GND" 4 0
+device mosfet nfet 15 55 16 56 2 4 "Gnd!" "a_n26_55#" 4 0 "GND" 4 0 "BL3" 4 0
+device mosfet nfet 15 65 16 66 2 4 "Gnd!" "WL1" 4 0 "BL3" 4 0 "GND" 4 0
+device mosfet nfet -11 65 -10 66 2 4 "Gnd!" "WL1" 4 0 "BL1" 4 0 "GND" 4 0
+device mosfet pfet 22 99 23 100 2 4 "w_n22_91#" "GND" 4 0 "BL3" 4 0 "VDD" 4 0
+device mosfet pfet 9 99 10 100 2 4 "w_n22_91#" "GND" 4 0 "BL2" 4 0 "VDD" 4 0
+device mosfet pfet -4 99 -3 100 2 4 "w_n22_91#" "GND" 4 0 "BL1" 4 0 "VDD" 4 0
+device mosfet pfet -17 99 -16 100 2 4 "w_n22_91#" "GND" 4 0 "BL0" 4 0 "VDD" 4 0
+subcap "WL7" -476
+subcap "WL6" -476
+subcap "WL5" -476
+subcap "WL4" -476
+subcap "WL3" -476
+subcap "a_n26_55#" -476
+subcap "WL1" -476
+subcap "WL0" -476
+subcap "GND" -371

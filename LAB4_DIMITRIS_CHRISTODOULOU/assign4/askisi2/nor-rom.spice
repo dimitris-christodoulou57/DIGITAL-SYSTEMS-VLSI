@@ -1,0 +1,55 @@
+* SPICE3 file created from nor-rom.ext - technology: scmos
+
+M1000 VDD GND BL0 w_n22_91# pfet w=4u l=2u
++  ad=96p pd=80u as=24p ps=20u
+M1001 VDD GND BL1 w_n22_91# pfet w=4u l=2u
++  ad=0p pd=0u as=24p ps=20u
+M1002 VDD GND BL2 w_n22_91# pfet w=4u l=2u
++  ad=0p pd=0u as=24p ps=20u
+M1003 VDD GND BL3 w_n22_91# pfet w=4u l=2u
++  ad=0p pd=0u as=24p ps=20u
+M1004 GND WL1 BL1 Gnd nfet w=4u l=2u
++  ad=808p pd=534u as=96p ps=80u
+M1005 GND WL1 BL3 Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=64p ps=48u
+M1006 BL3 a_n26_55# GND Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1007 GND WL3 BL0 Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=56p ps=44u
+M1008 GND WL3 BL2 Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=64p ps=48u
+M1009 BL0 WL4 GND Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1010 BL1 WL4 GND Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1011 BL2 WL4 GND Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1012 GND WL5 BL1 Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1013 GND WL5 BL2 Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1014 GND WL5 BL3 Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1015 BL2 WL6 GND Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1016 BL3 WL6 GND Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1017 GND WL7 BL0 Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+M1018 GND WL7 BL1 Gnd nfet w=4u l=2u
++  ad=0p pd=0u as=0p ps=0u
+C0 w_n22_91# GND 10.01fF
+C1 w_n22_91# VDD 9.59fF
+C2 WL7 Gnd 11.19fF
+C3 GND Gnd 2.88fF
+C4 WL6 Gnd 11.19fF
+C5 WL5 Gnd 10.56fF
+C6 WL4 Gnd 10.56fF
+C7 WL3 Gnd 11.19fF
+C8 a_n26_55# Gnd 11.83fF
+C9 WL1 Gnd 11.19fF
+C10 WL0 Gnd 12.46fF **FLOATING
+C11 BL3 Gnd 9.87fF
+C12 BL2 Gnd 9.87fF
+C13 BL1 Gnd 10.72fF
+C14 BL0 Gnd 9.87fF
